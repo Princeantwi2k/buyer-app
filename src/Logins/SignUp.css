@@ -1,0 +1,38 @@
+.signUp{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(245, 245, 245, 0.932);
+    height: 100vh;
+    width: 100vw;
+}
+.login-input{ 
+     width: 420px;
+    padding: 12px;
+    
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    margin-bottom: 30px;
+}
+.login-form-note{
+    color: red;
+}
+.login-logo{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+}
+@media screen and (max-width:480px) {
+    .login-input{ 
+        width: 320px;
+       padding: 18px;
+       
+       border-radius: 5px;
+       border: 1px solid gray;
+       outline: none;
+       margin-bottom: 30px;
+   }
+}
