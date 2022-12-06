@@ -20,12 +20,12 @@ function SignFormPassword() {
   <form className='form'>
   <div class="form-group">
     <label for="exampleInputText">Password</label><br />
-    <input type="password" class=" input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter your first name' /> <br />
+    <input type="password" class=" input"   placeholder='Enter your first name' /> <br />
    
   </div>
   <div class="form-group">
     <label for="exampleInputText">Confirm Password</label><br />
-    <input type="password" class=" input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter your last name' /> <br />
+    <input type="password" class=" input"  placeholder='Enter your last name' /> <br />
    
   </div>
   <p className='form-note'>

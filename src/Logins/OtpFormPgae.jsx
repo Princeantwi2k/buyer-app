@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./SignUp.css"
 import logo from '../assets/logo1.png'
 import opt from '../assets/opt.png'
 import {Link} from 'react-router-dom'
 function OtpFormPgae() {
+
+    const [otp,setOtp]= useState( new Array(4).fill(""));
+
+     const handleChange = (element,index) => {
+        if(isNaN(element.value)) return false;
+        setOtp([...otp.map((d,idx) =>(idx === index ? element.value :d))]);
+
+        //focus next input
+        if(element.nextSibling){
+            element.nextSibling.focus();
+        }
+     }
   return (
     <>
     <div className='login-logo'>
@@ -20,24 +32,23 @@ function OtpFormPgae() {
 
   </div>
   <div className='formTopic'>
-    <h3>Hello Again,</h3>
-    <p>Sign in to continue!</p>
+    <h3>OTP</h3>
+    <p>You need to enter a 4 digit code we sent via Provided email</p>
   </div>
   <form className='form'>
-  <div class="form-group">
+  <div clasName="login-form-input">
+    {
+        otp.map((data,index) => {
+            return(
+                <input type="text" name='otp' class=" login-input-otp" maxLength={1} value={data} key={index} onChange={e => handleChange(e.target,index)}  onFocus={e =>e.target.select()} /> 
+            )
+            
+        })
+    }
 
-    <input type="password" class="login-input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter email/phone' /> <br />
-   
   </div>
-  <div class="form-group">
-
-    <input type="password" class=" login-input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter your password' /> <br />
-   
-  </div>
-  <p className='login-form-note'>
-     Forgot password?
-   </p>
-    <p className='formButton'>
+  
+    <p className='login-formButton'>
       <Link to="/" className='form-link'> sign In</Link> 
     </p>
    

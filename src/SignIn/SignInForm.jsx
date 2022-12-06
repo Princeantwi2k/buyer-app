@@ -16,25 +16,25 @@ function SignInForm() {
     <h3>Create Account,</h3>
     <p>Sign up to get started!</p>
   </div>
-  <form className='form'>
+  <form className='form' >
   <div class="form-group">
     <label for="exampleInputText">First name</label><br />
-    <input type="text" class=" input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter your first name' /> <br />
+    <input type="text" class=" input" placeholder='Enter your first name' /> <br />
    
   </div>
   <div class="form-group">
     <label for="exampleInputText">Last name</label><br />
-    <input type="text" class=" input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter your last name' /> <br />
+    <input type="text" class=" input"  placeholder='Enter your last name' /> <br />
    
   </div>
   <div class="form-group">
     <label for="exampleInputNumber">Mobile number</label><br />
-    <input type="text" class=" input" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder='Enter your mobile number' /> <br />
+    <input type="text" class=" input"placeholder='Enter your mobile number' /> <br />
    
   </div>
   <div class="form-group">
     <label for="exampleInputNumber">Date of Birth</label><br/>
-    <input type="text" class=" input" id="exampleInputPassword1" placeholder='Enter your date of birth' />
+    <input type="text" class=" input" placeholder='Enter your date of birth' />
   </div>
     <p className='formButton'>
        <Link to="/password" className='form-link' >Continue</Link>
