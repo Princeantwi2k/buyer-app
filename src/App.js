@@ -6,6 +6,7 @@ import PasswordPage from './SignIn/PasswordPage';
 import Terms from './SignIn/Terms';
 import SignUp from './Logins/signUp';
 import OtpPage from './Logins/OtpPage';
+import MainPage from './HomePage/Home/MainPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/term" exact element={<Terms />} />
         <Route path="/login" exact element={<SignUp />} />
         <Route path="/otp" exact element={<OtpPage />} />
+        <Route path="/home" exact element={<MainPage />} />
       </Routes>
       </BrowserRouter>
      

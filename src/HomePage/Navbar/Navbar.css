@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    background-color: aqua;
+}
+.navbar-logo{
+    height: 100px;
+    width: 100px;
+}
+
+.nav-info{
+    display: flex;
+}

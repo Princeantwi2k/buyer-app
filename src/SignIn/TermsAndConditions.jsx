@@ -30,7 +30,7 @@ function TermsAndConditions() {
   </div>
 
   <p className='term-button form'>
-       <Link to="/mainPage" className='form-link' >Complete</Link>
+       <Link to="/home" className='form-link' >Complete</Link>
     </p>
    
   

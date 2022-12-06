@@ -49,7 +49,7 @@ function OtpFormPgae() {
   </div>
   
     <p className='login-formButton'>
-      <Link to="/" className='form-link'> sign In</Link> 
+      <Link to="/home" className='form-link'> sign In</Link> 
     </p>
    
 

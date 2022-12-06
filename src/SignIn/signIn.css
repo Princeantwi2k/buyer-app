@@ -66,6 +66,8 @@
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    border: none;
+    width: 30vw;
 }
 .sign-in{
     margin-left: 180px;
@@ -178,9 +180,11 @@
         background-color: lightblue;
         margin-right: 5px;
         border-radius: 5px;
+        border: none;
         margin-top: 20px;
         color: white;
         cursor: pointer;
+        width: 90vw;
     }
 
 
